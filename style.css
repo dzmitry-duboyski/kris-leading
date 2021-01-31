@@ -1,0 +1,113 @@
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: "Lato Regular", Verdana, sans-serif;
+  line-height: 1.42;
+  color: #000000;
+  cursor: url(assets/cursor/starter-3d-effect-cursor-cursor.png) , default!important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 940px;
+  margin: auto;
+}
+
+/* header */
+.header {
+  height: 100px;
+}
+
+.container_color_aquamarine {
+  background-color: aquamarine;
+}
+
+.header__topic {}
+
+.header__text{}
+
+/* search-topic */
+.search-topic {}
+.search-topic .container{ /* ? как правильно надо называть этот стиль  по БЭМ*/
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  align-items: center;
+}
+.search-topic__background-photo-one{
+  position: relative;
+  height: 600px;
+  width: 300px;
+  background-color: #cfcfd3;
+}
+
+.search-topic__background-photo-two{
+  position: absolute;
+  height: 600px;
+  width: 300px;
+  left: 10px;
+  top: 10px;
+  background: #a6a6a8;
+}
+
+.search-topic__topic-photo {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  height: 600px;
+  width: 300px;
+  border: 1px solid #000000;
+  cursor: url(assets/cursor/starter-3d-effect-cursor-pointer.png) , default!important;
+}
+
+.search-topic__topic-text {
+  font-family: "Press Start 2P";
+  font-size: 5rem;
+  padding-left: 50px;
+  color: #362f2f;
+  text-transform: uppercase;
+ }
+
+/*  */
