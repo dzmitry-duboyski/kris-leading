@@ -116,38 +116,38 @@ h6 {
  }
 
 /* section about-me */
-.about-me{
+.about-me,.my-requirements{
   background-color:  #16161a;
   height: 100vh;
   color:#8a8885;
   display: flex;
 }
 
-.about-me__caption-text{
+.about-me__caption-text,.my-requirements__caption-text{
   padding-left: 10px;
   background-color: brown;
   font-size: 2rem;
 }
 
-.about-me__description-text{
+.about-me__description-text,.my-requirements__description-text{
   padding-left: 50px;
  }
-.about-me__description-list{
+.about-me__description-list,.my-requirements__description-text{
 }
 
-.about-me__description-item {
+.about-me__description-item,.my-requirements__description-item {
   list-style-type: square;
   padding: 10px;
 }
 
-.about-me__description-item:hover{
+.about-me__description-item:hover,.my-requirements__description-item:hover{
   text-decoration: underline;
 }
 
 /* section my photo */
 
 .my-photo{
-  height: 100vh;
+  /* height: 100vh; */
   color:#1b1a18;
   display: flex;
 }
@@ -187,7 +187,13 @@ h6 {
   cursor: url(assets/cursor/starter-3d-effect-cursor-pointer.png) , default!important;
 }
 
-/*  */
+/* block my-requirements */
+
+.my-requirements{}
+
+
+
+
 /*  */
 
 
