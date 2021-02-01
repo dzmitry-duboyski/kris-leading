@@ -56,7 +56,7 @@ h6 {
   margin: auto;
 }
 
-/* header */
+/* section header */
 .header {
   height: 100px;
 }
@@ -69,7 +69,7 @@ h6 {
 
 .header__text{}
 
-/* search-topic */
+/* section search-topic */
 .search-topic {
 }
 .search-topic .container{ /* ? как правильно надо называть этот стиль  по БЭМ*/
@@ -115,9 +115,8 @@ h6 {
   text-transform: uppercase;
  }
 
-/* about-me */
+/* section about-me */
 .about-me{
-  /* padding-top: 20px; */
   background-color:  #16161a;
   height: 100vh;
   color:#8a8885;
@@ -144,10 +143,58 @@ h6 {
 .about-me__description-item:hover{
   text-decoration: underline;
 }
-/*  */
+
+/* section my photo */
+
+.my-photo{
+  height: 100vh;
+  color:#1b1a18;
+  display: flex;
+}
+
+.my-photo .container{
+  max-width: 1030px;
+}
+
+.my-photo__description-text{
+  padding-top: 60px;
+}
+
+.images-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.block-photo{
+  display: inline-block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.my-photo__foto{
+  width: 320px;
+  height: 320px;
+  filter: grayscale(100%); 
+}
+
+.my-photo__foto:hover{
+  filter: grayscale(0);
+  transition: 0.6s;
+  cursor: url(assets/cursor/starter-3d-effect-cursor-pointer.png) , default!important;
+}
+
 /*  */
 /*  */
 
+
+/* 
+
 .blur{
   filter: blur(5px);
-}
+} 
+
+*/
