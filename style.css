@@ -158,6 +158,7 @@ h6 {
 
 .my-photo__description-text{
   padding-top: 60px;
+  padding-left: 30px;
 }
 
 .images-container{
@@ -192,15 +193,36 @@ h6 {
 .my-requirements{}
 
 
+/* block test-offer  */
+
+.test-offer {
+
+}
+
+.test-offer{}
+
+.test-offer .container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+.test-offer__caption-text{
+  padding: 40px;
+  background-color: #2b2828;
+  color:#dfdbdb;
+  font-size: 2rem;
+}
+
+.test-offer__button-container{
+  display: flex;
+  justify-content: space-evenly;
+}
 
 
-/*  */
 
-
-/* 
-
-.blur{
+/* .blur{
   filter: blur(5px);
 } 
-
 */
