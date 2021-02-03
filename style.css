@@ -80,6 +80,7 @@ h6 {
 .language-list__item-link{
   padding: 5px;
   color: #1b1a18;
+  transition: 0.5s;
 }
 
 .language-list__item-link:hover{

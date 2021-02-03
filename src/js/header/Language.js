@@ -33,12 +33,14 @@ export class Language {
 
     const isOldLanguage = oldLanguage == newLanguage
     if (isOldLanguage){
-      console.warn('!')
+      console.warn('! you click on old langeage !, Please select other language')
       return;
     }
+    Language.changeLanguage();
+  }
 
-    //функция котрая меняет язык  на странице
-
+  static changeLanguage(){
+    return console.log('меняем язык')
   }
 
   displayCheckedLanguage(){
