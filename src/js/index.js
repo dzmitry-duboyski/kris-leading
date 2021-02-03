@@ -1,4 +1,4 @@
-import { Language } from './header/Language.js';
+import { Language } from './Language/Language.js';
 
 
 const lan = new Language();

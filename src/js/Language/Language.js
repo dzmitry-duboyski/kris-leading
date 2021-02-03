@@ -1,3 +1,4 @@
+
 export class Language {
   constructor() {
     this.defaultLanguage = 'En';
@@ -7,6 +8,7 @@ export class Language {
   init() {
     document.querySelector('.language-list').addEventListener('click', this.clickHandler);
     this.displayCheckedLanguage();
+    Language.displayChangeLanguage();
   }
 
   getCurrentLanguage(){
@@ -24,7 +26,7 @@ export class Language {
   clickHandler(e) {
     const currentElement = e.target;
     const allElements = document.querySelectorAll('.language-list__item-link');
-    allElements.forEach((el)=>el.classList.remove('active'))
+    allElements.forEach((el)=>el.classList.remove('active'));
     currentElement.classList.add('active');
     this.currentLanguage = currentElement.dataset.language;
     const oldLanguage = localStorage.getItem("currentLanguage");
@@ -33,14 +35,25 @@ export class Language {
 
     const isOldLanguage = oldLanguage == newLanguage
     if (isOldLanguage){
-      console.warn('! you click on old langeage !, Please select other language')
+      console.warn('! you click on old langeage !, Please select other language');
       return;
     }
-    Language.changeLanguage();
+    Language.displayChangeLanguage();
   }
 
-  static changeLanguage(){
-    return console.log('меняем язык')
+  static displayChangeLanguage(){
+    const elementToTranslate = document.querySelectorAll('[data-i18n]');
+    const currentLanguage = localStorage.getItem("currentLanguage");
+    // alert(currentLanguage)
+    fetch(`./src/js/Language/${currentLanguage}.json`)
+      .then(res => res.json())
+      .then(translations => {
+        elementToTranslate.forEach( element => {
+          element.textContent = translations[element.dataset.i18n]
+        })
+      })
+
+    return console.log('меняем язык');
   }
 
   displayCheckedLanguage(){
