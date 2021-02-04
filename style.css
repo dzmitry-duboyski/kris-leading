@@ -55,10 +55,8 @@ h6 {
   margin: auto;
 }
 
+
 /* section header */
-.header {
-  /* height: 100px; */
-}
 
 .header .container {
   padding: 20px;
@@ -97,7 +95,9 @@ h6 {
   text-decoration: underline;
 }
 
+
 /* section search-topic */
+
 .search-topic {
 }
 .search-topic .container{ /* ? как правильно надо называть этот стиль  по БЭМ*/
@@ -109,14 +109,14 @@ h6 {
   align-items: center;
   align-content: center;
 }
-.search-topic__background-photo-one{
+.main-photo__background-photo-one{
   position: relative;
   height: 600px;
   width: 300px;
   background-color: #cfcfd3;
 }
 
-.search-topic__background-photo-two{
+.main-photo__background-photo-two{
   position: absolute;
   height: 600px;
   width: 300px;
@@ -125,7 +125,7 @@ h6 {
   background: #a6a6a8;
 }
 
-.search-topic__topic-photo {
+.main-photo__topic-photo {
   position: absolute;
   left: 10px;
   top: 10px;
@@ -135,14 +135,25 @@ h6 {
   cursor: url(./src/img/icon/starter-3d-effect-cursor-pointer.png) , default!important;
 }
 
-.search-topic__topic-text {
+.topic-text__header{
+  display: block;
+  position: absolute;
+  top: -1000;
+  left: -1000;
+  z-index: -5;
+  color: #ffffff;
+}
+
+.topic-text__item {
   font-family: "Press Start 2P";
   font-size: 5rem;
   padding-left: 50px;
   text-transform: uppercase;
  }
 
+
 /* section about-me */
+
 .about-me,.my-requirements{
   background-color:  #16161a;
   height: 100vh;
@@ -150,52 +161,53 @@ h6 {
   display: flex;
 }
 
-.about-me__caption-text,.my-requirements__caption-text{
+.caption__text {
   padding-left: 10px;
   background-color: #a52a2a;
   font-size: 2rem;
 }
 
-.about-me__description-text,.my-requirements__description-text{
-  padding-left: 50px;
- }
-.about-me__description-list,.my-requirements__description-text{
+.description__list {
+  padding-left: 35px;
 }
 
-.about-me__description-item,.my-requirements__description-item {
+.description__item {
   list-style-type: square;
   padding: 10px;
 }
-    .about-me__description-item::before,.my-requirements__description-item::before {
-      display: inline-block;
-      content: attr(data-content);
-      color: rgb(213, 138, 228);
-      transform: translateX(100%);
-      transition: transform 275ms ease;
-      text-decoration: underline;
-    }
 
-.about-me__description-item:hover,.my-requirements__description-item:hover{
+.description__item::before {
+  display: inline-block;
+  content: attr(data-content);
+  color: rgb(213, 138, 228);
+  transform: translateX(100%);
+  transition: transform 275ms ease;
+  text-decoration: underline;
+}
+
+.description__item:hover {
   text-decoration: underline;
   transform: translateX(0);
 }
 
+
 /* section my photo */
-.my-photo{
+
+.my-photos{
   color:#1b1a18;
   display: flex;
 }
 
-.my-photo .container{
+.my-photos .container {
   max-width: 1030px;
 }
 
-.my-photo__description-text{
+.my-photos__caption {
   padding-top: 60px;
   padding-left: 30px;
 }
 
-.images-container{
+.images-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -204,34 +216,34 @@ h6 {
   padding-bottom: 20px;
 }
 
-.block-photo{
+.block-photo {
   display: inline-block;
   box-sizing: border-box;
   margin-bottom: 20px;
+  overflow: hidden; 
 }
 
-.my-photo__foto{
+.block-photo__photo {
   width: 320px;
   height: 320px;
   filter: grayscale(100%); 
+  transition: 0.3s;
 }
 
-.my-photo__foto:hover{
+.block-photo__photo:hover {
   filter: grayscale(0);
-  transition: 0.6s;
+  transition: 0.3s;
   cursor: url(./src/img/icon/starter-3d-effect-cursor-pointer.png) , default!important;
+  transform: scale(1.1);
 }
 
-/* block my-requirements */
-.my-requirements{}
+
+/* block my-requirements 
+no style
+*/
 
 
 /* block test-offer  */
-.test-offer {
-
-}
-
-.test-offer{}
 
 .test-offer .container{
   height: 100vh;
@@ -240,18 +252,18 @@ h6 {
   align-content: space-around;
   justify-content: space-evenly;
 }
-.test-offer__caption-text{
+.offer-text{
   padding: 40px;
   background-color: #2b2828;
   color:#dfdbdb;
   font-size: 2rem;
 }
 
-.test-offer__button-container{
+.btn-container{
   display: flex;
   justify-content: space-evenly;
 }
-.test-offer__button{
+.offer-btn{
   display: inline;
   position: relative;
   margin: 10px 20px;
@@ -264,11 +276,11 @@ h6 {
   text-decoration: none;
 }
 
-.test-offer__button:hover{
+.offer-btn:hover{
   cursor: url(./src/img/icon/starter-3d-effect-cursor-pointer.png) , default!important;
 }
 
-.test-offer__button:after {
+.offer-btn:after {
   content: "";
   position: absolute;
   top: 0;
@@ -281,7 +293,7 @@ h6 {
   border: 4px solid rgba(0, 0, 0, 0);
   transition: .4s;
 }
-.test-offer__button:hover:after {
+.offer-btn:hover:after {
   border-color: #f1c40f;
   width: calc(100% - 10px);
   height: calc(100% + 10px);
