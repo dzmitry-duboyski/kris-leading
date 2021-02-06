@@ -6,6 +6,9 @@
   <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="./src/js/vendor/swiper/swiper-bundle.css">
+  <script src="src/js/vendor/swiper/swiper-bundle.js"></script>
   <title>BEST Girl</title>
 </head>
 <body>
@@ -27,7 +30,22 @@
         <div class="main-photo">
           <div class="main-photo__background-photo-one">
             <div class="main-photo__background-photo-two">
-              <img class="main-photo__topic-photo" src="./src/img/photo/topic-photo.jpg" alt="мое фото" >
+              <div class="swiper-container main-photo__topic-photo">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="" src="./src/img/photo/topic-photo.jpg" alt="мое фото" >
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="" src="./src/img/photo/topic-photo.jpg" alt="мое фото" >
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="" src="./src/img/photo/topic-photo.jpg" alt="мое фото" >
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -114,7 +132,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-DWT5PKWSMQ');
 </script>
 </body>

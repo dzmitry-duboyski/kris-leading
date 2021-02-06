@@ -55,6 +55,15 @@ h6 {
   margin: auto;
 }
 
+.swiper-container {
+  height: 600px;
+  width: 300px;
+  border: 1px solid red;
+}
+
+.swiper-slide{
+  overflow: hidden;
+}
 
 /* section header */
 
@@ -115,6 +124,7 @@ h6 {
   height: 600px;
   width: 300px;
   background-color: #cfcfd3;
+  /* padding-right: 40px; */
 }
 
 .main-photo__background-photo-two{
