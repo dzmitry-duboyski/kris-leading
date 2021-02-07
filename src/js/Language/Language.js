@@ -13,7 +13,7 @@ export class Language {
 
   getCurrentLanguage(){
     const currentLanguage = localStorage.getItem('currentLanguage')
-    const supportedLanguageList = ['En','Be','Uk','Ru']
+    const supportedLanguageList = ['En','By','Uk','Ru']
     const isNotSupportedLanguage = !supportedLanguageList.includes(currentLanguage);
     if (isNotSupportedLanguage){
       localStorage.setItem('currentLanguage', this.defaultLanguage)
@@ -44,7 +44,6 @@ export class Language {
   static displayChangeLanguage(){
     const elementToTranslate = document.querySelectorAll('[data-i18n]');
     const currentLanguage = localStorage.getItem("currentLanguage");
-    // alert(currentLanguage)
     fetch(`./src/js/Language/${currentLanguage}.json`)
       .then(res => res.json())
       .then(translations => {
