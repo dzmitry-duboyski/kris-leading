@@ -20,22 +20,18 @@ var swiper = new Swiper('.swiper-container', {
   },
 });
 
-// const startTest = () => {
-//   document.querySelector('.test').classList.remove('hidden');
-// };
-
-// document.querySelector('.offer-btn').addEventListener('click', startTest);
-
 const handlerClick = (e) => {
   if(e.target.className === "offer-btn"){
-    return document.querySelector('.test').classList.remove('hidden');
+    document.querySelector('.test').classList.remove('hidden');
+    document.querySelector('body').classList.add('display-modal');
+    return 
   }
 
   if(e.target.className === "btn-close-test") {
-    return document.querySelector('.test').classList.add('hidden');
+    document.querySelector('.test').classList.add('hidden');
+    document.querySelector('body').classList.remove('display-modal');
+    return
   }
-
-  
 }
 
 document.addEventListener('click', handlerClick);

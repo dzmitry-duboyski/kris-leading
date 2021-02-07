@@ -55,6 +55,12 @@ h6 {
   margin: auto;
 }
 
+body.display-modal {
+  overflow: hidden;
+}
+
+/* section header */
+
 .swiper-container {
   height: 600px;
   width: 300px;
@@ -65,7 +71,10 @@ h6 {
   overflow: hidden;
 }
 
-/* section header */
+.swiper-button-prev,
+.swiper-button-next {
+  cursor: url(./src/img/icon/starter-3d-effect-cursor-pointer.png) , default!important;
+}
 
 .header .container {
   padding: 20px;
@@ -242,6 +251,7 @@ h6 {
   height: 320px;
   filter: grayscale(100%); 
   transition: 0.3s;
+  object-fit: cover;
 }
 
 .block-photo__photo:hover {
