@@ -51,8 +51,6 @@ export class Language {
           element.textContent = translations[element.dataset.i18n]
         })
       })
-
-    return console.log('меняем язык');
   }
 
   displayCheckedLanguage(){

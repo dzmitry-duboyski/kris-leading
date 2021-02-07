@@ -15,6 +15,7 @@ body {
   line-height: 1.42;
   color: #362f2f;
   cursor: url(./src/img/icon/starter-3d-effect-cursor-cursor.png) , default!important;
+  overflow: hidden;
 }
 
 * {
@@ -106,6 +107,11 @@ h6 {
 
 
 /* section search-topic */
+
+.swiper-button-next,
+.swiper-button-prev {
+  cursor: url(./src/img/icon/starter-3d-effect-cursor-pointer.png) , default!important;
+}
 
 .search-topic {
 }
