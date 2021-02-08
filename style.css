@@ -176,7 +176,8 @@ body.display-modal {
 
 /* section about-me */
 
-.about-me,.my-requirements{
+.about-me,
+.my-requirements {
   background-color:  #16161a;
   height: 100vh;
   min-height: 240px;
@@ -186,7 +187,7 @@ body.display-modal {
 
 .caption__text {
   padding-left: 10px;
-  background-color: #a52a2a;
+  background-color: #070707;
   font-size: 2rem;
 }
 
