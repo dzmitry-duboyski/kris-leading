@@ -105,14 +105,6 @@ h6 {
   text-decoration: underline;
 }
 
-
-/* section search-topic */
-
-.swiper-button-next,
-.swiper-button-prev {
-  cursor: url(./src/img/icon/starter-3d-effect-cursor-pointer.png) , default!important;
-}
-
 .search-topic {
 }
 .search-topic .container{ 
@@ -150,6 +142,7 @@ h6 {
   width: 300px;
   border: 1px solid #000000;
   cursor: url(./src/img/icon/starter-3d-effect-cursor-pointer.png) , default!important;
+  /* overflow: hidden; */
 }
 
 .topic-text__header{
