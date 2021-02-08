@@ -6,7 +6,7 @@ Deploy status [![Netlify Status](https://api.netlify.com/api/v1/badges/286adfc2-
 
 
 Landing page for my friend.
-One evening when I was walking with my friend, she said that she did not have enough money. As a joke, she skalaz about finding a rich guy.
+One evening when I was walking with my friend, she said that she did not have enough money. As a joke, she said about finding a rich guy.
 A rich guy would solve her problems with a lack of finance.
 I developed this idea and suggested making a website for her that would help her with search.
 We discussed the details and later I started to implement.
