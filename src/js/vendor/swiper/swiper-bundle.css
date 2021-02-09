@@ -139,6 +139,7 @@
   scroll-snap-type: y mandatory;
 }
 :root {
+
   --swiper-navigation-size: 44px;
   /*
   --swiper-navigation-color: var(--swiper-theme-color);
@@ -147,17 +148,31 @@
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  top: 90%;
-  width: calc(var(--swiper-navigation-size) / 44 * 27);
-  height: var(--swiper-navigation-size);
+  top: 20px;
+  /* background-color: tomato; */
+  /* width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size); */
+  width: 150px;
+  height: 600px;
+  margin-left: -12px;
+  padding-bottom: 24px;
   margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
   z-index: 10;
   cursor: pointer;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
 }
+
+.swiper-button-prev{
+  margin-left: -12px;
+}
+.swiper-button-next{
+  margin-right: -12px;
+}
+
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
   opacity: 0.35;
