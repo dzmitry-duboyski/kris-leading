@@ -16,5 +16,7 @@
   "myRequirementsHumor":"good sense of humour",
   "testOfferText1":"If you think that you are worthy of me and I am looking for you, then you need to take a compatibility test.",
   "testOfferText2":"If you pass the test successfully, you will receive an email notification.",
-  "testOfferTextBTN":"test"
+  "testOfferTextBTN":"test",
+  "testMessageText1":"Sorry, the test is not available at the moment...",
+  "testMessageText2":"The window will close automatically."
 }

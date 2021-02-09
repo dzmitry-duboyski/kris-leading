@@ -1,5 +1,8 @@
 import { Language } from './Language/Language.js';
+import { ModalWindow } from './ModalWindow/ModalWindow.js';
 
+const modal = new ModalWindow();
+modal.init();
 const lan = new Language();
 lan.init();
 
@@ -22,15 +25,11 @@ var swiper = new Swiper('.swiper-container', {
 
 const handlerClick = (e) => {
   if(e.target.className === "offer-btn"){
-    document.querySelector('.test').classList.remove('hidden');
-    document.querySelector('body').classList.add('display-modal');
-    return 
+    return modal.displayModalWindow();
   }
 
   if(e.target.className === "btn-close-test") {
-    document.querySelector('.test').classList.add('hidden');
-    document.querySelector('body').classList.remove('display-modal');
-    return
+    return modal.closeModalWindow();
   }
 }
 
