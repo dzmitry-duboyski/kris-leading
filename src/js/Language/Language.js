@@ -44,7 +44,7 @@ export class Language {
   static displayChangeLanguage(){
     const elementToTranslate = document.querySelectorAll('[data-i18n]');
     const currentLanguage = localStorage.getItem("currentLanguage");
-    fetch(`./src/js/Language/${currentLanguage}.json`)
+    fetch(`./src/js/Language/translations/${currentLanguage}.json`)
       .then(res => res.json())
       .then(translations => {
         elementToTranslate.forEach( element => {
